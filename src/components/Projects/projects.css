@@ -1,0 +1,25 @@
+.row {
+  background-color: #f9c076;
+  /* background-color: #f1d6ca; */
+  padding: 0px 120px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.projectSquare {
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  border: 1px solid white;
+  border-radius: 7px;
+  right: calc(100vw/2 - 50px);
+}
+@media screen and (max-width: 775px) {
+  .row {
+    padding:0px;
+  }
+}

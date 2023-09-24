@@ -1,0 +1,123 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: fixed;
+  justify-content: space-around;
+  font-size: calc(14px + 2vmin);
+  color: white;
+  float: left;
+  z-index: 2;
+}
+.navBarLinks {
+  color: #112A46 ;
+  /* font-size: calc(14px + 2vmin); */
+  font-size: 30px;
+  font-family: Inter,sans-serif;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.navbar :hover {
+  color: #4582C4;
+}
+#navbar{
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+}
+
+.active {
+  color: #4582C4;
+}
+
+.slide-in {
+  animation: slide-in 0.5s forwards;
+  -webkit-animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+  animation: slide-out 0.5s forwards;
+  -webkit-animation: slide-out 0.5s forwards;
+}
+  
+@keyframes slide-in {
+  100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+  100% { -webkit-transform: translateX(0%); }
+}
+  
+@keyframes slide-out {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slide-out {
+  0% { -webkit-transform: translateX(0%); }
+  100% { -webkit-transform: translateX(-100%); }
+}
+
+@media screen and (max-width: 775px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    /* max-height: 15%; */
+    min-height: 5vh;
+    width: 100vw;
+    position: fixed;
+    align-content: center;
+    justify-content: space-around;
+    color: white;
+    background-color: #f9c076;
+    padding: 0 5px;
+  }
+  .navBarLinks {
+    color: #112A46 ;
+    font-size: calc(10px + 1vmin);
+    /* font-size: 30px; */
+    font-family: Inter,sans-serif;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  
+  }
+  #navbar{
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+  }
+  /* a:hover, a:active {
+    color: #4582C4 !important;
+  } */
+  .active {
+    color: #4582C4;
+  }
+  
+  .slide-in {
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+  }
+  
+  .slide-out {
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
+  }
+    
+  @keyframes slide-in {
+    100% { transform: translateY(0%); }
+  }
+  
+  @-webkit-keyframes slide-in {
+    100% { -webkit-transform: translateY(0%); }
+  }
+    
+  @keyframes slide-out {
+    0% { transform: translateY(0%); }
+    100% { transform: translateY(-100%); }
+  }
+  
+  @-webkit-keyframes slide-out {
+    0% { -webkit-transform: translateY(0%); }
+    100% { -webkit-transform: translateY(-100%); }
+  }
+}

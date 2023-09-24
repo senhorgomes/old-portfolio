@@ -1,0 +1,86 @@
+.aboutMe {
+  background-color: #f9c076;
+  /* background-color: #efc5b2; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.aboutMeStyle {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 30px;
+  /* color: white; */
+  color: black;
+  width: 600px;
+  text-align: left;
+}
+.headshotBorder{
+  border: 1px white solid;
+  width: 284px;
+  border-radius: 50%;
+  height: 309px;
+  position: absolute;
+}
+.headshot {
+  /* background: linear-gradient(133deg,hsla(0,0%,100%,0) 50%,white 0); */
+  border-radius: 50%;
+  padding: 10px 25px;
+  display: flex;
+  width: 300px;
+  z-index: 1;
+}
+.text {
+  /* background: linear-gradient(45deg,hsla(0,0%,100%,0) 50%,white 0); */
+  padding: 10px 25px;
+  min-width: 300px;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  border-left: 1px solid white;
+}
+
+@media screen and (max-width: 775px) {
+  .headshot {
+    /* background: linear-gradient(133deg,hsla(0,0%,100%,0) 50%,white 0); */
+    width: 205px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .headshotBorder {
+    position: absolute;
+    background-color: transparent;
+    border: 1px solid white;
+    height: 216px;
+    width: 216px;
+    border-radius: 50%;
+    /* top: 118vh; */
+    top: 118vh;
+    right: 35%;
+  }
+  .textBorder {
+    position: absolute;
+    background-color: transparent;
+    /* border: 1px solid white; */
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    height: 101px;
+    width: 80%;
+    /* width: 308px; */
+    top: 161vh;
+    left: 4%;
+  }
+  .text {
+    /* background: linear-gradient(45deg,hsla(0,0%,100%,0) 50%,white 0); */
+    min-width: 150px;
+    min-height: 125px;
+  }
+  .aboutMeStyle {
+    flex-direction: column;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    text-align: center;
+  }
+}

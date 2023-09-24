@@ -1,0 +1,66 @@
+.card-title {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 2rem;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 700;
+  border-bottom: 1px solid white;
+  color: #0d2035;
+}
+.card-description {
+  text-align: left;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: calc(10px + 2vmin);
+  color: #0d2035;
+}
+.project-card, .project-card-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  padding: 25px;
+  /* width: 400px; */
+}
+.project-info-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1em;
+}
+.project-info-text-right {
+  display: flex;
+  flex-direction: column;
+  padding-right: 1em;
+}
+.project-img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 240px;
+  height: 240px;
+  border-radius: 7px;
+  border-bottom: solid 1px #dadada;
+  /* border-radius: 10px 10px 0 0; */
+  border-radius: 10px;
+  /* overflow: hidden; for other mode */
+  /* position: relative; for other mode */
+  transition: border-color 0.2s linear;
+  /* z-index: 1; */
+}
+@media screen and (max-width: 775px) {
+  .project-info-text, .project-info-text-right {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+  }
+  .row {
+    padding:0px;
+  }
+  .project-card-right {
+    flex-direction: column-reverse;
+    max-width: 100%;
+  }
+  .project-card {
+    flex-direction: column;
+    max-width: 100%;
+  }
+}
